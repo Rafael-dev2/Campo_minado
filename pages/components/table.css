@@ -1,0 +1,76 @@
+.defaultTable {
+  width: 100%;
+  min-width: 70vw;
+
+  font-size: 24px;
+
+  border-spacing: 0;
+  border: 40px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+
+  overflow: hidden;
+  
+  backdrop-filter: blur(8px);
+}
+
+.defaultTable thead tr {
+  background-color: #7fff00 !important;
+  padding-right: 10px;
+}
+
+.defaultTable thead td {
+  position: sticky;
+  top: 0;
+}
+
+.defaultTable tbody {
+  display: block;
+  overflow-y: scroll;
+  max-height: 60vh;
+}
+
+/* Styling tbody scrool */
+
+.defaultTable tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.defaultTable tbody::-webkit-scrollbar-thumb {
+  background-color: #7ce215;
+}
+
+.defaultTable tbody::-webkit-scrollbar-track {
+  background-color: #64b810;
+}
+
+.defaultTable tr {
+  width: 100%;
+  
+  display: flex;
+}
+
+.defaultTable td, th {
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  overflow: hidden; 
+  
+  flex: 1;
+}
+
+.defaultTable td span {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.defaultTable tr:nth-child(even) {
+  background-color: #7fff00;
+}
+
+.defaultTable tr:nth-child(odd) {
+  background-color: #c9fc96;
+}

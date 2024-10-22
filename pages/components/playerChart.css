@@ -1,0 +1,76 @@
+.playerChart {
+  height: 3.5rem;
+
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  border-radius: 30px;
+
+  transition: 300ms;
+
+  text-decoration: none;
+}
+
+.playerChart:hover {
+  height: auto;
+}
+
+.playerChart > div {
+  background-color: black;
+
+  color: white;
+}
+
+.playerChart .playerChartInfo {
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  /* transition: 300ms; */
+}
+
+.playerChart .playerChartOptions {
+  padding-bottom: 0.5rem;
+}
+
+.playerChart .playerChartOptions p {
+  padding: 0.5rem 1.5rem;
+  color: white;
+}
+
+.playerChart .playerChartOptions p:hover {
+  background-color: rgb(48, 47, 47);
+}
+
+.playerChartOptions button {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+
+.playerChart .playerChartImg {
+  height: 2.5rem;
+  width: 2.5rem;
+
+  background-color: #ddd;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerChart .playerChartImg img {
+  height: 1.5rem;
+  width: auto;
+}

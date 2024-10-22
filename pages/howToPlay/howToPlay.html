@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="howToPlay.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../components/playerChart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Como Jogar</title>
+</head>
+<body>
+    <header>
+        <div class="playerChart">
+            <div class="playerChartInfo">
+                <p>Jogador X</p>
+                <div class="playerChartImg">
+                    <img src="../../imgs/player.png" alt="Jogador">
+                </div>
+            </div>
+            <div class="playerChartOptions">
+                <a href="../editData/editData.html" class="player-btn">
+                    <p>
+                        Perfil
+                    </p>
+                </a>
+                <a href="../history/index.html" class="player-btn">
+                    <p>
+                        Histórico
+                    </p>
+                </a>
+                <button onclick="handleLogout()">
+                    <p>
+                        Sair
+                    </p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div id="text-overlay">
+                <div class="center">
+                    <h1>Como Jogar</h1>
+                    <p>O Campo Minado é um jogo em que o jogador deve revelar todas as células de um tabuleiro sem acertar nenhuma mina escondida. 
+                        O tabuleiro é composto por várias células que podem conter minas ou estar vazias. 
+                         O objetivo é evitar as minas e descobrir as áreas seguras.<br> Quando o jogador clica em uma célula, há dois possíveis resultados: <br></p>
+                    <ul>
+                        <li>Se a célula contiver uma mina, o jogo acaba e o jogador perde.</li>
+                        <li>Se a célula não tiver uma mina, ela revela um número indicando quantas minas estão nas células adjacentes a ela (incluindo as diagonais).</li>
+                    </ul>
+                    <p>O número revelado nas células ajuda o jogador a deduzir onde as minas estão. 
+                        <br>O jogador pode marcar onde estão as possíveis minas, clicando com o botão direito do mouse e vencer ao revelar onde estão as células com bombas. 
+                        A estratégia do jogo envolve lógica e dedução para identificar as células seguras e evitar as minas.
+                    </p>
+                </div>
+                <a href="../play/modoNormal.html" class="imageBtn alignSelfStart" id="back-btn">
+                    <img src="../../imgs/VOLTAR.png" alt="Pagina anterior" class="btn_voltar">
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="../../scripts/playerChart.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TelaInicial.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../components/playerChart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Inicial</title>
+</head>
+
+<body>
+    <header>
+        <div class="playerChart">
+            <div class="playerChartInfo">
+                <p>Jogador X</p>
+                <div class="playerChartImg">
+                    <img src="../../imgs/player.png" alt="Jogador">
+                </div>
+            </div>
+            <div class="playerChartOptions">
+                <a href="../editData/editData.html" class="player-btn">
+                    <p>
+                        Perfil
+                    </p>
+                </a>
+                <a href="../history/index.html" class="player-btn">
+                    <p>
+                        Histórico
+                    </p>
+                </a>
+                <button onclick="handleLogout()">
+                    <p>
+                        Sair
+                    </p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h1>
+                Bomb
+                <img src="../../imgs/bombinha.png" alt="bombinha" class="bombatitulo">
+                Hunter
+            </h1>
+            <div id="buttonDiv" class="center">
+                <div class="bombermanRow">
+                    <img src="../../imgs/gifbomberman.gif" alt="bomberman" class="giftelaprinc">
+                </div>
+                <button class="imageBtn playBtn" onclick="handlePlay()">
+                    <img src="../../imgs/JOGAR.png" alt="Jogar">
+                </button>
+                <a href="../login/TelaLogin.html" class="imageBtn playBtn" id="loginBtn">
+                    <img src="../../imgs/LOGIN.png" alt="Login">
+                </a>
+                <a href="../record/index.html" class="imageBtn playBtn">
+                    <img src="../../imgs/RECORDS.png" alt="Records">
+                </a>
+            </div>
+        </section>
+        <script src="../../scripts/playerChart.js"></script>
+        <script src="./TelaInicial.js"></script>
+    </main>
+</body>
+
+</html>

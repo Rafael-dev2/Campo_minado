@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../components/playerChart.css">
+    <link rel="stylesheet" href="../editData/editData.css">
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Edição de Dados</title>
+</head>
+
+<body>
+    <header>
+        <div class="playerChart">
+            <div class="playerChartInfo">
+                <p>Jogador X</p>
+                <div class="playerChartImg">
+                    <img src="../../imgs/player.png" alt="Jogador">
+                </div>
+            </div>
+            <div class="playerChartOptions">
+                <a href="../editData/editData.html" class="player-btn">
+                    <p>
+                        Perfil
+                    </p>
+                </a>
+                <a href="../history/index.html" class="player-btn">
+                    <p>
+                        Histórico
+                    </p>
+                </a>
+                <button onclick="handleLogout()">
+                    <p>
+                        Sair
+                    </p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <img src="../../imgs/bombFlag.png" alt="bandeira" class="bandeirinha">
+            <div id="text-overlay">
+                <form class="center" id="dataForm">
+                    <h1>Dados Cadastrados</h1>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" placeholder="Seu nome completo" id="nome" disabled>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" placeholder="Seu CPF" id="cpf" disabled>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" placeholder="Sua data de nascimento" id="dataNascimento" disabled>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" placeholder="Seu telefone" id="telefone" disabled>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" placeholder="Seu email" id="email" disabled>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="password" placeholder="Sua senha" id="senha" disabled>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="password" placeholder="Senha novamente" id="confirmSenha" required>
+                    </div>
+                
+                    <a href="../signup/signup.html" id="registerLink" class="link row fontSize-s alignSelfEnd">
+                        <p>Deseja alterar seus dados?</p>
+                        <p>Clique aqui!</p>
+                    </a>
+
+                    <button type="submit" class="btn_login imageBtn" id="botaoLogin">
+                        <img src="../../imgs/LOGIN.png" alt="Botão">
+                    </button>
+
+                </form>
+            </div>
+        </section>
+        <aside id="bomber">
+            <img src="../../imgs/gifbomberman.gif" alt="bomberman" class="giftelaprinc">
+        </aside>
+        <a href="../modeSelection/modeSelection.html" class="imageBtn alignSelfStart" id="back-btn">
+            <img src="../../imgs/VOLTAR.png" alt="Pagina anterior" class="btn_voltar">
+        </a>
+
+        <a href="../history/index.html" class="link-historico alignSelfStart" id="historico-btn">
+            <p>Histórico</p>
+        </a>
+    </main>
+    <script src="../../scripts/playerChart.js"></script>
+    <script src="editData.js"></script>
+</body>
+
+</html>

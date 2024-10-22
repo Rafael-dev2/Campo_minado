@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../components/playerChart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <img src="../../imgs/bombFlag.png" alt="bandeira" class="bandeirinha">
+            <div id="text-overlay">
+                <form class="center" id="signupForm">
+                    <h1>Cadastrar</h1>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" id="cpf" placeholder="Digite seu CPF" required maxlength="14">
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" id="birthdate" placeholder="Digite sua data de nascimento" required maxlength="10">
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="text" id="phone" placeholder="Digite seu telefone" required maxlength="15">
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="entradaUsuario-box espaco-menor">
+                        <input type="password" placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                    <button type="submit" class="btn_cadastro">
+                        <img src="../../imgs/REGISTRAR.png" alt="Botão">
+                    </button>
+
+                    <a href="../login/TelaLogin.html" id="registerLink" class="link row fontSize-s alignSelfEnd">
+                        <p>Já possui conta?</p>
+                        <p>Conecte-se!</p>
+                    </a>
+
+                </form>
+            </div>
+        </section>
+        <aside id="bomber">
+            <img src="../../imgs/gifbomberman.gif" alt="bomberman" class="giftelaprinc">
+        </aside>
+    </main>
+    <script src="./signup.js"></script>
+</body>
+
+</html>

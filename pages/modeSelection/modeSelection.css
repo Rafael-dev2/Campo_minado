@@ -1,0 +1,152 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-overlay {
+    max-width: 700px;
+    max-height: 500px;
+
+    padding: 20px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    border-radius: 10px;
+}
+
+#text-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+#modes{
+    display: flex;
+    flex-direction: row;
+}
+#Normal, #Rivotril{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconimg{
+    height: 32px;
+    width: 32px;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.5s;
+} 
+
+.link:hover {
+    text-decoration: underline;
+    color: rgb(70, 144, 255);
+}
+
+.link p + p {
+    color: lightgreen;
+}
+
+section.container {
+    justify-content: center !important;
+}
+
+.giftelaprinc {
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+    width: 240px;
+    height: auto;
+    display: flex;
+}
+
+#back-btn {
+    position: fixed;
+    bottom: 2vh;   
+    left: 2vw;     
+    width: 8vw;    
+    max-width: 120px; 
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#back-btn img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.1s ease, box-shadow 0.1s ease;
+}
+
+#back-btn:hover img {
+    filter: brightness(1.1);
+}
+
+#back-btn:active img {
+    filter: brightness(0.7);
+}
+
+@media (max-width: 768px) {
+    #back-btn {
+        bottom: 4vh; 
+        left: 3vw;    
+        width: 10vw;  
+    }
+}
+
+@media (max-width: 480px) {
+    #back-btn {
+        bottom: 5vh; 
+        left: 4vw;    
+        width: 12vw;  
+    }
+}
+
+#config {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+#config div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#config h2 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+#config input {
+    width: 100px; 
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #config {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #config div {
+        margin-bottom: 15px;
+    }
+}
+

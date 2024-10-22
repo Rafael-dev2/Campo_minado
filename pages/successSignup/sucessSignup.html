@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sucessSignup.css">
+    <link rel="stylesheet" href="../components/playerChart.css">
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cadastrado com Sucesso</title>
+</head>
+<body>
+    <header>
+        <div class="playerChart">
+            <div class="playerChartInfo">
+                <p>Jogador X</p>
+                <div class="playerChartImg">
+                    <img src="../../imgs/player.png" alt="Jogador">
+                </div>
+            </div>
+            <div class="playerChartOptions">
+                <a href="../editData/editData.html" class="player-btn">
+                    <p>
+                        Perfil
+                    </p>
+                </a>
+                <a href="../history/index.html" class="player-btn">
+                    <p>
+                        Histórico
+                    </p>
+                </a>
+                <button onclick="handleLogout()">
+                    <p>
+                        Sair
+                    </p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div id="text-overlay">
+                <form class="center">
+                    <h1>Cadastrado com sucesso!</h1>
+                    <p>Você já pode jogar o nosso jogo!!<br></p>
+                </form>
+                
+                <a href="../home/TelaInicial.html" class="imageBtn alignSelfStart" id="back-btn">
+                    <img src="../../imgs/VOLTAR.png" alt="Pagina anterior" class="btn_voltar">
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="../../scripts/playerChart.js"></script>
+</body>
+</html>

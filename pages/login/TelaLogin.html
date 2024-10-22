@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Telalogin.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../components/playerChart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <img src="../../imgs/bombFlag.png" alt="bandeira" class="bandeirinha">
+            <div id="text-overlay">
+                <form class="center" onsubmit="handleLogin"> 
+                    <h1>Login</h1>
+                    <div class="entradaUsuario-box">
+                        <h2>E-mail</h2>
+                        <input id="user" type="text" placeholder="E-mail" required>
+                    </div>
+                    <div id="inputespacMenor" class="entradaUsuario-box">
+                        <h2>Senha</h2>
+                        <input id="password" type="password" placeholder="Senha" required>
+                    </div>
+
+                    <div class="esqueceuSenha">
+                        <div class="row">
+                            <input id="remindMe" type="checkbox">
+                            <label for="remindMe"> Lembrar de mim </label>
+                        </div>
+
+                        <a href="../recoverPassword/recoverPassword.html" class="link row">
+                            <p>Esqueceu a senha?</p>
+                            <p>Clique aqui!</p>
+                        </a>
+                    </div>
+
+                    <button type="submit" class="btn_login imageBtn">
+                        <img src="../../imgs/LOGIN.png" alt="Botão">
+                    </button>
+
+                    <a href="../home/TelaInicial.html" class="imageBtn alignSelfStart" id="back-btn">
+                        <img src="../../imgs/VOLTAR.png" alt="Pagina anterior" class="btn_voltar">
+                    </a>
+
+                    <a href="../signup/signup.html" id="registerLink" class="link row fontSize-s alignSelfEnd">
+                        <p>Não possui conta?</p>
+                        <p>Clique aqui!</p>
+                    </a>
+                </form>
+            </div>
+        </section>
+        <aside id="bomber">
+            <img src="../../imgs/gifbomberman.gif" alt="bomberman" class="giftelaprinc">
+        </aside>
+    </main>
+    <script src="../../scripts/api/index.js"></script>
+    <script src="./TelaLogin.js"></script>
+</body>
+
+</html>

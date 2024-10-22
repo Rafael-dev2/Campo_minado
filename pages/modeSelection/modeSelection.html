@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modeSelection.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../components/playerChart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Seleção de Modo</title>
+</head>
+
+<body>
+    <header>
+        <div class="playerChart">
+            <div class="playerChartInfo">
+                <p>Jogador X</p>
+                <div class="playerChartImg">
+                    <img src="../../imgs/player.png" alt="Jogador">
+                </div>
+            </div>
+            <div class="playerChartOptions">
+                <a href="../editData/editData.html" class="player-btn">
+                    <p>
+                        Perfil
+                    </p>
+                </a>
+                <a href="../history/index.html" class="player-btn">
+                    <p>
+                        Histórico
+                    </p>
+                </a>
+                <button onclick="handleLogout()">
+                    <p>
+                        Sair
+                    </p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div id="text-overlay">
+                <form class="center">
+                    <h1 id="Selecao">Seleção de Modo</h1>
+                    <div id="config">
+                        <div id="qtd_bombas">
+                            <h2>Quantidade de bombas</h2>
+                            <input type="number" id="bombas_input" name="bombas" min="1" max="100">
+                        </div>
+                        <div id="tam_tabuleiro">
+                            <h2>Tamanho do tabuleiro</h2>
+                            <input type="number" id="tabuleiro_input" name="tabuleiro" min="5" max="15">
+                        </div>
+                    </div>
+                    <div id="modes">
+                        <div id="Normal">
+                            <img class="iconimg" src="../../imgs/bombFlag.png" alt="Bandeira">
+                            <h2>Modo Normal</h2>
+                            <p style="margin-bottom: 16px;">Modo sem limitação de tempo</p>
+                            <!-- Modificado para usar função JavaScript -->
+                            <a class="link" href="#" onclick="startGame(false)">
+                                <img src="../../imgs/JOGAR.png" alt="Botão JOGAR" class="btn_login imageBtn">
+                            </a>
+                        </div>
+                        <div id="Rivotril">
+                            <img class="iconimg" src="../../imgs/relogio.png" alt="Relógio">
+                            <h2>Modo Rivotril</h2>
+                            <p style="margin-bottom: 16px;">Modo com limitação de tempo</p>
+                            <!-- Modificado para usar função JavaScript -->
+                            <a class="link" href="#" onclick="startGame(true)">
+                                <img src="../../imgs/JOGAR.png" alt="Botão JOGAR" class="btn_login imageBtn">
+                            </a>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </section>
+        <aside id="bomber">
+            <img src="../../imgs/gifbomberman.gif" alt="bomberman" class="giftelaprinc">
+        </aside>
+        <a href="../home/TelaInicial.html" class="imageBtn alignSelfStart" id="back-btn">
+            <img src="../../imgs/VOLTAR.png" alt="Pagina anterior" class="btn_voltar">
+        </a>
+    <script src="../../scripts/playerChart.js"></script>
+    <script src="modeSelection.js"></script>
+</body>
+
+</html>

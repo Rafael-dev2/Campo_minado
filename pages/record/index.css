@@ -1,0 +1,33 @@
+#title {
+  text-wrap: nowrap;
+}
+
+section.container {
+  width: 60vw;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+#back-btn {
+  position: fixed;
+  bottom: 2vh;   
+  left: 2vw;     
+  width: 8vw;    
+  max-width: 120px; 
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#back-btn img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.1s ease, box-shadow 0.1s ease;
+}
+
+#back-btn:hover img {
+  filter: brightness(1.1);
+}
+
+#back-btn:active img {
+  filter: brightness(0.7);
+}

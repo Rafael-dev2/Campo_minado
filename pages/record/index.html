@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bomb Hunter - Maiores records</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../components/table.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../index.css'>
+    <link rel="stylesheet" href="../components/playerChart.css">
+</head>
+
+<body>
+    <header>
+        <div class="playerChart">
+            <div class="playerChartInfo">
+                <p>Jogador X</p>
+                <div class="playerChartImg">
+                    <img src="../../imgs/player.png" alt="Jogador">
+                </div>
+            </div>
+            <div class="playerChartOptions">
+                <a href="../editData/editData.html" class="player-btn">
+                    <p>
+                        Perfil
+                    </p>
+                </a>
+                <a href="../history/index.html" class="player-btn">
+                    <p>
+                        Histórico
+                    </p>
+                </a>
+                <button onclick="handleLogout()">
+                    <p>
+                        Sair
+                    </p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h1 id="title" class="fontSize-xg">
+                Ranking Global
+            </h1>
+            <table class="defaultTable">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome</th>
+                        <th>Pontos</th>
+                        <th>Modo</th>
+                    </tr>
+                </thead>
+                <tbody id="recordTableBody">
+                </tbody>
+            </table>
+        </section>
+        <a href="../home/TelaInicial.html" class="imageBtn alignSelfStart" id="back-btn">
+            <img src="../../imgs/VOLTAR.png" alt="Pagina anterior" class="btn_voltar">
+        </a>
+    </main>
+    <script src="../../scripts/api/index.js"></script>
+    <script src="../../scripts/playerChart.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

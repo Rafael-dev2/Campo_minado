@@ -1,0 +1,186 @@
+.titulo {
+    text-align: center;
+    padding-left: 56px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+td{
+    text-align: center;
+}
+.game-area{
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    color: #000;
+    font-size: 18px;
+}
+
+.modo {
+    margin-left: 20px;
+}
+
+
+.timer {
+    display: flex;
+    align-items: center;
+}
+
+.timer img {
+    margin-right: 8px;
+    width: 70px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 100px;
+    margin-right: 30px;
+    text-align: right;
+}
+
+.tamanho, #bombsLeft {
+    margin-bottom: 5px;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 20px;
+    min-height: auto;
+}
+
+.tabuleiro {
+    width: 600px;
+    height: 500px;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trapaca-btn {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 15rem;
+
+
+    color: #000000;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-wrap: nowrap;
+}
+
+.trapaca-btn img {
+    width: 60px;
+}
+
+#back-btn {
+    position: fixed;
+    bottom: 2vh;   
+    left: 2vw;     
+    width: 8vw;    
+    max-width: 120px; 
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #back-btn img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.1s ease, box-shadow 0.1s ease;
+  }
+  
+  #back-btn:hover img {
+    filter: brightness(1.1);
+  }
+  
+  #back-btn:active img {
+    filter: brightness(0.7);
+  }
+
+  #comoJogar-btn {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw; /* Alinha o link no canto direito */
+    cursor: pointer;
+    z-index: 1000;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.1s ease, text-shadow 0.1s ease;
+}
+
+/* Efeito hover */
+#comoJogar-btn:hover {
+    color: #6bff37;
+    text-shadow: 0px 0px 10px #6bff37;
+}
+
+#comoJogar-btn:active {
+    color: #4caf50;
+}
+
+#game-area {
+    width: 38rem;
+    height: 38rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    border: 2px solid black;
+}
+
+#game-area > div {
+    font-weight: 700;
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: row;
+
+    flex-grow: 1;
+}
+
+#game-area div div {
+    flex: 1;
+    
+    background-color: #4caf50;
+    border: 2px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+#game-area > div:nth-child(odd) > div:nth-child(odd),
+#game-area > div:nth-child(even) > div:nth-child(even) {
+  background-color: #4caf50;
+}
+
+#game-area > div:nth-child(odd) > div:nth-child(even),
+#game-area > div:nth-child(even) > div:nth-child(odd) {
+  background-color: #6bff37;
+}
